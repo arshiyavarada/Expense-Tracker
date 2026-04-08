@@ -1,0 +1,254 @@
+.page { max-width: 1050px; }
+
+.header { margin-bottom: 24px; }
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.sub {
+  font-size: 0.82rem;
+  color: var(--ink-4);
+  margin-top: 3px;
+  font-family: var(--font-mono);
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--white);
+  border: 1.5px solid var(--parchment-2);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--parchment-2);
+}
+
+/* ── Donut ── */
+
+.donutWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.donutSvg { width: 170px; height: 170px; }
+
+.slice {
+  transition: opacity 0.15s;
+  cursor: default;
+}
+
+.slice:hover { opacity: 1 !important; }
+
+.donutTop {
+  font-family: var(--font-body);
+  font-size: 9px;
+  fill: var(--ink-4);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.donutVal {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  fill: var(--ink);
+  font-weight: 500;
+}
+
+/* ── Legend ── */
+
+.legend { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+.legendDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legendLabel { flex: 1; color: var(--ink-3); }
+.legendAmt   { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-2); }
+.legendPct   { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-4); width: 42px; text-align: right; }
+
+/* ── Bar chart ── */
+
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 210px;
+  padding-bottom: 36px;
+  overflow-x: auto;
+}
+
+.barCol {
+  flex: 1;
+  min-width: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.barWrap {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4px;
+}
+
+.bar {
+  width: 100%;
+  background: var(--forest);
+  border-radius: 5px 5px 0 0;
+  min-height: 3px;
+  opacity: 0.75;
+  transition: opacity var(--dur), height 0.6s var(--ease-out);
+  cursor: default;
+}
+
+.bar:hover { opacity: 1; }
+
+.barLabel {
+  position: absolute;
+  bottom: 16px;
+  font-size: 0.65rem;
+  color: var(--ink-4);
+  text-align: center;
+  width: 100%;
+}
+
+.barAmt {
+  position: absolute;
+  bottom: 0;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--ink-4);
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Table ── */
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-4);
+  border-bottom: 1.5px solid var(--parchment-2);
+  font-weight: 700;
+}
+
+.table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--parchment-2);
+  color: var(--ink-3);
+  vertical-align: middle;
+}
+
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--parchment); }
+
+.catCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.catDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.right { text-align: right; }
+.mono  { font-family: var(--font-mono); }
+
+.shareCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shareBar {
+  flex: 1;
+  height: 4px;
+  background: var(--parchment-2);
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 60px;
+}
+
+.shareFill {
+  height: 100%;
+  border-radius: 2px;
+  opacity: 0.8;
+  transition: width 0.6s var(--ease-out);
+}
+
+.sharePct {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-4);
+  white-space: nowrap;
+}
+
+.noData {
+  padding: 24px;
+  text-align: center;
+  color: var(--ink-4);
+  font-size: 0.88rem;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 780px) {
+  .topGrid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,127 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--white);
+  border: 1.5px solid var(--parchment-2);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur);
+  animation: fadeRow 0.25s var(--ease-out);
+}
+
+@keyframes fadeRow {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.row:hover {
+  border-color: var(--parchment-3);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.compact { padding: 10px 14px; }
+.compact .icon { width: 32px; height: 32px; font-size: 0.9rem; }
+
+/* Icon */
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Info */
+.info { flex: 1; min-width: 0; }
+
+.titleLine { margin-bottom: 2px; }
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desc {
+  font-size: 0.78rem;
+  color: var(--ink-4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.catTag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.sep { color: var(--ink-4); font-size: 0.8rem; }
+
+.date {
+  font-size: 0.75rem;
+  color: var(--ink-4);
+  font-family: var(--font-mono);
+}
+
+/* Amount */
+.amount {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity var(--dur);
+  flex-shrink: 0;
+}
+
+.row:hover .actions,
+.row:focus-within .actions { opacity: 1; }
+
+.actionBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--dur), color var(--dur);
+  color: var(--ink-4);
+}
+
+.editBtn:hover {
+  background: var(--forest-light);
+  color: var(--forest);
+}
+
+.deleteBtn:hover {
+  background: var(--danger-light);
+  color: var(--danger);
+}
