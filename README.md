@@ -2,13 +2,13 @@
 
 > Assignment 1 · COMP[XXXX] · Dynamic Web Interface to a Database System
 
-A single-page application for tracking personal expenses. Users can log, categorise, edit, and analyse their spending across customisable time periods — all without a single page reload.
+A single-page application for tracking personal expenses. Users can log, categorise, edit, and analyse their spending across customisable time periods, all without a single page reload.
 
 ---
 
 ## Problem Statement
 
-Managing personal finances is difficult when spending data lives across bank apps, spreadsheets, and receipts. Ledger provides a unified, frictionless interface where users can log expenses as they happen, categorise them meaningfully, and immediately see where their money is going through visual summaries and trend charts. The goal is to lower the barrier to financial self-awareness.
+Managing personal finances is difficult when spending data lives across bank apps, spreadsheets, and receipts. Ledger provides a unified, frictionless interface where users can log expenses as they happen, categorise them meaningfully and immediately see where their money is going through visual summaries and trend charts. The goal is to lower the barrier to financial self-awareness.
 
 ---
 
