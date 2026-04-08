@@ -1,6 +1,6 @@
 # Ledger — Personal Expense Tracker
 
-> Assignment 1 · COMP[XXXX] · Dynamic Web Interface to a Database System
+> Assignment 1  · Dynamic Web Interface to a Database System
 
 A single-page application for tracking personal expenses. Users can log, categorise, edit, and analyse their spending across customisable time periods, all without a single page reload.
 
@@ -27,17 +27,17 @@ Managing personal finances is difficult when spending data lives across bank app
 
 ## Features
 
-- **Dashboard** — Summary stats (total, average, top category), horizontal category breakdown bars, and recent transactions at a glance
-- **Expenses list** — Full paginated list of all expenses with staggered entry animations
-- **Analytics** — SVG donut chart by category, monthly bar chart trend, and a detailed summary table
-- **Add / Edit expenses** — Modal form with inline validation, focus trapping, and accessible labels
-- **Delete with confirmation** — Confirm dialog prevents accidental deletion
-- **Live filtering** — Filter by year, month, and category; sort by date, amount, or title
-- **Toast notifications** — Non-blocking feedback after every create, update, or delete
-- **Responsive design** — Sidebar collapses gracefully on mobile screens
-- **Accessible UI** — ARIA roles, `aria-label` on all icon buttons, keyboard-navigable modals, focus trap, visible focus rings, and sufficient colour contrast
-- **Error handling** — API failures show an in-page error banner (the app never goes blank)
-- **Seeded sample data** — 36 realistic expenses spanning 6 months for immediate demo use
+- **Dashboard** - Summary stats (total, average, top category), horizontal category breakdown bars, and recent transactions at a glance
+- **Expenses list** - Full paginated list of all expenses with staggered entry animations
+- **Analytics** - SVG donut chart by category, monthly bar chart trend, and a detailed summary table
+- **Add / Edit expenses** - Modal form with inline validation, focus trapping, and accessible labels
+- **Delete with confirmation** - Confirm dialog prevents accidental deletion
+- **Live filtering** - Filter by year, month, and category; sort by date, amount, or title
+- **Toast notifications** - Non-blocking feedback after every create, update, or delete
+- **Responsive design** - Sidebar collapses gracefully on mobile screens
+- **Accessible UI** - ARIA roles, `aria-label` on all icon buttons, keyboard-navigable modals, focus trap, visible focus rings, and sufficient colour contrast
+- **Error handling** - API failures show an in-page error banner (the app never goes blank)
+- **Seeded sample data** - 36 realistic expenses spanning 6 months for immediate demo use
 
 ---
 
