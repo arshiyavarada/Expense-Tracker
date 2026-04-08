@@ -1,4 +1,4 @@
-# Ledger — Personal Expense Tracker
+# Ledger: Personal Expense Tracker
 
 > Assignment 1  · Dynamic Web Interface to a Database System
 
@@ -213,17 +213,17 @@ All routes are prefixed with `/api`.
 
 ## Assignment Checklist
 
-- [x] Single-page application — one `index.html`, React rewrites DOM in place
-- [x] **C**reate — add expense via modal form
-- [x] **R**ead — dashboard, expense list, analytics (3 views)
-- [x] **U**pdate — edit any expense inline via modal
-- [x] **D**elete — remove with confirmation dialog
+- [x] Single-page application - one `index.html`, React rewrites DOM in place
+- [x] **C**reate - add expense via modal form
+- [x] **R**ead - dashboard, expense list, analytics (3 views)
+- [x] **U**pdate - edit any expense inline via modal
+- [x] **D**elete - remove with confirmation dialog
 - [x] Category breakdown view (bars + donut chart)
 - [x] Monthly trend view (bar chart + summary table)
 - [x] Toast notifications for all mutations
 - [x] Accessible (ARIA, keyboard nav, focus trap, contrast)
 - [x] Responsive mobile layout
-- [x] Error handling — server-down banner, form validation
+- [x] Error handling - server-down banner, form validation
 - [x] Database export in `database/expenses.json`
 - [x] Seed script for easy setup
 
@@ -231,4 +231,4 @@ All routes are prefixed with `/api`.
 
 ## License
 
-MIT — free for academic and personal use.
+MIT - free for academic and personal use.
