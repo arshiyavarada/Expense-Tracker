@@ -19,7 +19,7 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/ledger';
 app.use(cors());
 app.use(express.json());
 // Serve the production React build from /client/build
-app.use(express.static(path.join(__dirname, '../../client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // ── MongoDB Connection ────────────────────────────────────────────────────────
 mongoose.connect(MONGO_URI)
@@ -145,7 +145,7 @@ app.use((err, req, res, _next) => {
 
 // ── Catch-all: serve React SPA ────────────────────────────────────────────────
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 app.listen(PORT, () => console.log(`🚀  Server → http://localhost:${PORT}`));
