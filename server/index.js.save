@@ -145,7 +145,7 @@ app.use((err, req, res, _next) => {
 
 // ── Catch-all: serve React SPA ────────────────────────────────────────────────
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 app.listen(PORT, () => console.log(`🚀  Server → http://localhost:${PORT}`));
